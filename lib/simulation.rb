@@ -19,7 +19,7 @@ class Simulation
   end
 
   def get_val
-    if rand < probability
+    if rand <= probability
       true
     else
       false
