@@ -5,7 +5,7 @@ require_relative 'lib/histogram'
 require_relative 'lib/pc_histogram'
 
 PROBABILITY = 0.01
-SAMPLE_SIZE = 100
+SAMPLE_SIZE = 100000
 ITERATIONS = 1000
 vals = (0..ITERATIONS).collect do |i|
   Simulation.new(PROBABILITY, SAMPLE_SIZE).call
